@@ -105,6 +105,8 @@ if __name__ == '__main__':
     plt.ylabel('train_loss')
     plt.savefig('./save/fed_{}_{}_{}_C{}_iid{}.png'.format(args.dataset, args.model, args.epochs, args.frac, args.iid))
 
+
+
     # testing
     net_glob.eval()
     acc_train, loss_train = test_img(net_glob, dataset_train, args)
